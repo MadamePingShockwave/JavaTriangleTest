@@ -29,6 +29,9 @@ public class TriangleTest {
 
     @Test
     public void sidesShouldBePositive() {
-        //TODO: add your test cases 
+        Triangle t1 = new Triangle(-3, 3, 3);
+        assertEquals("Error: The length should be positive", t.getTriangleType());
+        Triangle t2 = new Triangle(3, -3, 3);
+        assertEquals("Error: The length should be positive", t.getTriangleType());
     }
 }
